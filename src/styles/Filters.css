@@ -1,0 +1,53 @@
+/* Conteneur commun pour tous les filtres */
+.filter-wrapper {
+  display: inline-block;
+  position: relative;
+  margin: 0 5px;
+}
+
+/* Style commun pour select */
+.filter-select {
+  padding: 8px 32px 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #ff6a00;
+  color: white;
+  outline: none;
+  appearance: none; /* supprime la flèche par défaut */
+  transition: all 0.2s ease;
+}
+
+/* Flèche personnalisée pour select */
+.filter-select::after {
+  content: "▼";
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+/* Hover et focus */
+.filter-select:hover,
+.filter-select:focus {
+  background-color: #e35a00;
+  border-color: #e35a00;
+}
+
+/* Style pour input de recherche */
+.filter-input {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  outline: none;
+  width: 200px;
+  transition: all 0.2s ease;
+}
+
+.filter-input:focus {
+  border-color: #ff6a00;
+  box-shadow: 0 0 5px rgba(255, 106, 0, 0.5);
+}

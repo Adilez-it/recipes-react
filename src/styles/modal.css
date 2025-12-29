@@ -1,0 +1,124 @@
+/* modal.css */
+
+/* Backdrop */
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* semi-transparent dark overlay */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Modal container */
+.modal {
+  background-color: #fff;
+  padding: 25px 30px;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 500px;
+  max-height: 90%;
+  overflow-y: auto;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+  position: relative;
+  animation: fadeIn 0.25s ease-in-out;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Close button */
+.modal button {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: #ff6a00ff;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.modal button:hover {
+  background-color: #e35a00;
+}
+
+/* Modal headings */
+.modal h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+.modal h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 5px;
+}
+
+/* Image */
+.modal img {
+  display: block;
+  margin: 15px auto;
+  border-radius: 8px;
+  max-width: 100%;
+}
+
+/* Time & Calories row */
+.modal .info-row {
+  display: flex;
+  justify-content: space-around;
+  background-color: #f8f8f8;
+  padding: 8px 12px;
+  border-radius: 6px;
+  margin: 15px 0;
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+.modal .info-row span {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+/* Ingredients list */
+.modal ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.modal ul li {
+  background-color: #f3f3f3;
+  margin-bottom: 6px;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 0.95rem;
+}
+
+/* Paragraphs */
+.modal p {
+  margin: 8px 0;
+  font-weight: 500;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

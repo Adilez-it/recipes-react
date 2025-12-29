@@ -1,0 +1,80 @@
+.recipe-card {
+  width: 250px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 16px;
+  margin: 12px;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.recipe-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.recipe-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+
+.recipe-card h2 {
+  font-size: 18px;
+  margin: 8px 0;
+  color: #333;
+}
+
+.recipe-card p {
+  font-size: 14px;
+  margin: 4px 0;
+  color: #666;
+}
+
+.recipe-card button {
+  padding: 6px 12px;
+  margin: 6px 4px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.2s ease;
+}
+
+.recipe-card button:hover {
+  opacity: 0.9;
+}
+
+.recipe-card button.delete-btn {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.recipe-card button.delete-btn:hover {
+  background-color: #c0392b;
+}
+
+.recipe-card button:not(.delete-btn) {
+  background-color: #fc6b03c2;
+  color: white;
+}
+
+.recipe-card button:not(.delete-btn):hover {
+  background-color: #e35a00;
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 600px) {
+  .recipe-card {
+    width: 90%;
+    margin: 10px auto;
+  }
+  .recipe-card img {
+    height: 200px;
+  }
+}

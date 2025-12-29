@@ -1,0 +1,138 @@
+.recipe-details {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 30px;
+  background: #ffffff;
+  border-radius: 14px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+  font-family: "Segoe UI", Tahoma, sans-serif;
+}
+
+/* Title */
+.recipe-title {
+  text-align: center;
+  font-size: 34px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Meta row */
+.recipe-meta {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-bottom: 35px;
+  padding: 12px 20px;
+  background: #fff3e8;
+  border-radius: 8px;
+  font-weight: 600;
+  color: #ff6a00;
+}
+
+.recipe-meta span {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* Sections */
+.recipe-section {
+  margin-bottom: 30px;
+}
+
+.recipe-section h2 {
+  font-size: 22px;
+  margin-bottom: 15px;
+  color: #ff6a00;
+  border-left: 4px solid #ff6a00;
+  padding-left: 10px;
+}
+
+/* Ingredients */
+.ingredients-list {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 10px;
+}
+
+.ingredients-list li {
+  background: #f7f7f7;
+  padding: 10px 14px;
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+/* Instructions */
+.instructions-list {
+  padding-left: 20px;
+}
+
+.instructions-list li {
+  margin-bottom: 12px;
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+/* States */
+.loading,
+.error {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 18px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .recipe-meta {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .recipe-title {
+    font-size: 26px;
+  }
+}
+.recipe-hero {
+  height: 320px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 16px;
+  position: relative;
+  margin-bottom: -120px;
+}
+
+.recipe-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.25),
+    rgba(0, 0, 0, 0.75)
+  );
+  display: flex;
+  align-items: flex-end;
+  padding: 30px;
+  border-radius: 16px;
+}
+
+.recipe-hero-overlay h1 {
+  color: white;
+  font-size: 36px;
+  font-weight: 700;
+}
+.back-button {
+  background: none;
+  border: none;
+  color: #ff6a00;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+
+.back-button:hover {
+  text-decoration: underline;
+}
